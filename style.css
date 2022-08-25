@@ -1,0 +1,306 @@
+*{
+
+    margin: 0px;
+    padding: 2px;
+    
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: rgba(0,0,0,0.9);
+    width: 1350px;
+    height: 117px;
+    position: fixed;
+    
+   
+  }
+
+    
+ .container{
+    width: auto;
+    height: 40vh;
+    
+    
+
+ }
+ .navbar{
+    width: 80%;
+    margin: auto;
+    
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+ }
+ .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0, 20px;
+    position: relative;
+    padding: 3px;
+    padding-right: 12px;
+   
+   
+ }
+    .navbar ul li a{
+    
+        color: rgb(252, 246, 246);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+       font-family: 'Times New Roman', Times, serif;
+       
+
+    }
+    .navbar ul li ::before{
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: rgb(232, 63, 63);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s ease-out;
+        
+    }
+    .navbar ul li:hover ::before{
+        width: 100%;
+        transition: 0.4s ease-in;
+    }
+    .social{
+        margin-bottom: 110px;
+    }
+    .social ul li{
+        list-style: none;
+       
+       
+       
+       
+       
+       
+    }
+    
+    
+    .social ul li a{
+        list-style: none;
+        
+        color: rgb(233, 233, 233);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-facebook{
+        padding: 5px;
+        background-color: blue;
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 7%;
+        
+       
+    }
+    .icon-twitter{
+        padding: 5px;
+        background-color: rgb(125, 114, 162);
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 7%;
+       
+    }
+    .icon-instagram{
+        padding: 5px;
+        background-color: rgb(255, 0, 0);
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 7%;
+       
+      
+    }
+    .icon-whatsapp{
+        padding: 5px;
+        background-color: rgb(186, 170, 62);
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 7%;
+        
+       
+    }
+    .icon-mail{
+        padding: 5px;
+        background-color: rgb(70, 14, 14);
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 7%;
+       
+    }
+  
+    .icon-mail:hover, .icon-facebook:hover, .icon-twitter:hover, .icon-instagram:hover, .icon-whatsapp:hover {
+        width: 110%;
+        transform: translateX(15%);
+        transition: 0.4s ease-in;
+        background-color: black;
+    }
+    .elementos{
+        
+       
+        display: flex;
+        flex-direction: row;
+       
+        
+        
+        flex-wrap: nowrap;
+    }
+    section{
+       
+       padding-left: 25px;
+       display: flex;
+         flex-direction: column;
+
+      
+  
+    
+   
+
+
+    }
+    section a{
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        position: absolute;
+        top: 55%;
+        left: 6%;
+    }
+    section a:hover{
+        
+        color: chartreuse;
+    }
+    footer{
+        background-color: rgb(0, 0, 0);
+        color: rgb(250, 250, 250);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       flex-direction: column;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+
+    
+    }
+    .cont p a{
+         
+        
+        
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        
+        font-weight: bold;
+        font-family: 'kalinga', sans-serif;
+    }
+    .cont p a:hover{
+       padding-inline-start: 10px;
+        color: chartreuse;
+       font-size: large;
+      color: chartreuse;
+      
+     
+         transition: 0.3s ease-in;
+         
+    }
+    .spinner{
+        background-color: rgba(0,0,0,0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        
+        
+    }
+    /* crear un spinner de carga */
+    .spinner {
+        width: 60px;
+        height: 50px;
+        border: 9px solid rgb(250, 250, 250);
+        border-top: 5px solid rgb(232, 63, 63);
+        border-radius: 50%;
+        animation: spin 1s linear  infinite;
+        
+    }
+    @keyframes spin{
+        0%{
+            background-color: rgba(0,0,0,0.9);
+            transform: rotate(0deg);
+           
+        }
+        100%{
+           
+            transform: rotate(360deg);
+            
+
+           
+           
+        }
+    }
+    
+    .spinner:before{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid rgb(250, 250, 250);
+        border-top: 5px solid rgb(232, 63, 63);
+        animation: spin 1s linear  infinite;
+    }
+    .spinner:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid rgb(250, 250, 250);
+        border-top: 5px solid rgb(232, 63, 63);
+        animation: spin 1s linear  infinite;
+    }
+    /* desaparecer spinner de carga */
+
+   
+
+
+
+
+   
+   
